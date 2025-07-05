@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milty Food - Готовое правильное питание</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                Milty Food
+                <img src="../accents/icon.png" alt="Логотип">
+            </div>
+            <nav>
+                <a href="#home">Главная</a>
+                <a href="#products">Продукция</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <div class="header-right">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                </div>
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero" id="home">
+        <h1>Здоровое питание без хлопот</h1>
+        <p>Хотите правильно питаться, но не стоять у плиты? Попробуйте наши готовые блюда из сбалансированных ингредиентов.</p>
+        <a href="#products" class="btn">Выбрать блюдо</a>
+    </section>
+    
+    <section id="products">
+        <h2 class="section-title">Наша продукция</h2>
+        
+        <div class="products-container">
+            <h3 class="category-title">Первые блюда</h3>
+            <div class="products-grid">
+                <div class="product-card" data-id="1" data-name="Суп лапша" data-price="250">
+                    <img src="../accents/soup-noodles.jpg" alt="Суп лапша" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Суп лапша</h4>
+                        <p class="product-price">250 ₽</p>
+                        <div class="product-actions">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="2" data-name="Суп томатный с фрикадельками" data-price="280">
+                    <img src="../accents/soup-tomato-with-frikadelki.jpg" alt="Суп томатный с фрикадельками" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Суп томатный с фрикадельками</h4>
+                        <p class="product-price">280 ₽</p>
+                        <div class="product-actions">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="category-title">Вторые блюда</h3>
+            <div class="products-grid">
+                <div class="product-card" data-id="3" data-name="Рыбная котлета с картофелем и соусом бешамель" data-price="350">
+                    <img src="../accents/fish-with-potato.jpeg" alt="Рыбная котлета с картофелем" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Рыбная котлета с картофелем и соусом бешамель</h4>
+                        <p class="product-price">350 ₽</p>
+                        <div class="product-actions">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="4" data-name="Патари с овощами и мясом свинины" data-price="380">
+                    <img src="../accents/pattati-with-veg.jpeg" alt="Патари с овощами" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Патари с овощами и мясом свинины</h4>
+                        <p class="product-price">380 ₽</p>
+                        <div class="product-actions">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="category-title">Салаты и закуски</h3>
+            <div class="products-grid">
+                <div class="product-card" data-id="5" data-name="Сандвич с ветчиной и сыром" data-price="220">
+                    <img src="../accents/sandwich.jpeg"Сандвич с ветчиной и сыром" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Сандвич с ветчиной и сыром</h4>
+                        <p class="product-price">220 ₽</p>
+                        <div class="product-actions">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="6" data-name="Греческий салат" data-price="290">
+                    <img src="../accents/greek-salat.webp" alt="Греческий салат" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Греческий салат</h4>
+                        <p class="product-price">290 ₽</p>
+                        <div class="product-actions">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="category-title">Десерты и напитки</h3>
+            <div class="products-grid">
+                <div class="product-card" data-id="7" data-name="Смузи с манго" data-price="180">
+                    <img src="../accents/smooth-with-mango.jpg" alt="Смузи с манго" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Смузи с манго</h4>
+                        <p class="product-price">180 ₽</p>
+                        <div class="product-actions">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="8" data-name="Кисель из маракуи" data-price="150">
+                    <img src="../accents/kisel.jpg" alt="Кисель из маракуи" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Кисель из маракуи</h4>
+                        <p class="product-price">150 ₽</p>
+                        <div class="product-actions">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contacts">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">Milty Food</div>
+                <p>Готовые блюда для тех, кто ценит свое время и здоровье.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Меню</h3>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#products">Продукция</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Контакты</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +7 (977) 000-00-00</li>
+                    <li><i class="fas fa-clock"></i> График работы: 9:00-21:30</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Адрес: г. Москва, ул. Примерная, 123</li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Гарантия качества</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Жалобы и предложения</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 UD Milty Food. Все права защищены.</p>
+        </div>
+    </footer>
+    
+    <!-- Модальное окно корзины -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3 class="cart-title">Ваша корзина</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Здесь будут отображаться товары в корзине -->
+            <div class="empty-cart">Корзина пуста</div>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>Итого:</span>
+                <span id="cartTotal">0 ₽</span>
+            </div>
+            <button class="checkout-btn">Оформить заказ</button>
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+<script src="../js/script.js"></script>
+</body>
+</html>
